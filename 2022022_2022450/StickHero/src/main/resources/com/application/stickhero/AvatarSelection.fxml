@@ -1,0 +1,35 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.util.Callback?>
+<?import javafx.collections.FXCollections?>
+
+<VBox fx:id="avatarSelectionRoot" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.stickhero.AvatarSelectionController">
+    <children>
+        <Button fx:id="selectButton" layoutX="269.0" layoutY="274.0" mnemonicParsing="false" onAction="#switchToMainScene" text="Return to home" />
+        <ListView fx:id="avatarsListView" layoutX="50.0" layoutY="200.0" prefWidth="150.0" prefHeight="200.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <ImageView>
+                        <image>
+                            <Image url="@avatar1.png"/>
+                        </image>
+                    </ImageView>
+                    <ImageView>
+                        <image>
+                            <Image url="@avatar2.png"/>
+                        </image>
+                    </ImageView>
+                    <ImageView>
+                        <image>
+                            <Image url="@avatar3.png"/>
+                        </image>
+                    </ImageView>
+                </FXCollections>
+            </items>
+        </ListView>
+
+
+    </children>
+</VBox>

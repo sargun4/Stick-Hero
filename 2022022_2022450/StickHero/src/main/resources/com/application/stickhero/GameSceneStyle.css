@@ -1,0 +1,12 @@
+.root {
+    -fx-background-image: url('Background.png');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.root * {
+    -fx-font-family: 'Helvetica';
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}

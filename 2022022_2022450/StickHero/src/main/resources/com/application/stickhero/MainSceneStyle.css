@@ -1,0 +1,73 @@
+.root {
+    -fx-background-image: url('Background.png');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.root * {
+    -fx-font-family: 'Helvetica';
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.label {
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+}
+
+#berriesCount {
+    -fx-alignment: CENTER_RIGHT;
+    -fx-wrap-text: true;
+}
+
+#gameName {
+    -fx-font-size: 70px;
+}
+
+.button {
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to bottom, #FF6347, #FF0000);
+    -fx-cursor: HAND;
+}
+
+.button:hover {
+    -fx-linear-gradient(to bottom, #FF0000, #FF6347)
+}
+
+.button:pressed {
+    -fx-linear-gradient(to bottom, #FF6347, #FF0000)
+}
+
+#playButton {
+    -fx-padding: 10px 10px;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.3) , 10, 0 , 0 , 2 );
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+#playButton:hover {
+     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 10, 0 , 0 , 2 );
+}
+
+#playButton:pressed {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.8) , 10, 0 , 0 , 2 );
+}
+
+#musicCheckbox {
+    -fx-background-color: transparent;
+    -fx-text-fill: rgba(200, 180, 233, 0.8);
+    -fx-cursor: hand;
+}
+
+#musicCheckbox:hover {
+    -fx-text-fill: #000;
+}
+
+#musicCheckbox:selected {
+    -fx-text-fill: #000;
+}
+

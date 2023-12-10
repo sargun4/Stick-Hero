@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="450" stylesheets="@MainSceneStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.stickhero.Shop">
+    <!-- Other elements for the ShopScene -->
+
+    <Label fx:id="moneyLabel" layoutX="20.0" layoutY="20.0" text="Money: 100" />
+    <Label fx:id="berriesCountLabel" layoutX="20.0" layoutY="60.0" text="Berries: 0" />
+
+    <ImageView layoutX="150.0" layoutY="100.0">
+        <image>
+            <Image url="@strawberry.png" />
+        </image>
+    </ImageView>
+
+    <Button fx:id="purchaseButton" layoutX="150.0" layoutY="200.0" onAction="#purchaseBerries" text="Purchase Berries" />
+    <Button fx:id="backButton" layoutX="350.0" layoutY="540.0" onAction="#switchToMainScene" text="Back" />
+</AnchorPane>

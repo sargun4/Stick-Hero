@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="rootPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="450" stylesheets="@MainSceneStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.stickhero.MainSceneController">
+    <children>
+        <Button id="playButton" fx:id="playButton" layoutX="166.0" layoutY="327.0" mnemonicParsing="false" onAction="#switchToPlayScene" prefHeight="115" prefWidth="115" text="PLAY">
+        </Button>
+        <CheckBox id="musicCheckBox" fx:id="musicCheckbox" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#toggleMusic" text="MUSIC">
+        </CheckBox>
+       <Label id="highestPoints" fx:id="highestPoints" contentDisplay="RIGHT" layoutX="305.0" layoutY="14.0" prefHeight="56.0" prefWidth="98.0" text="" textAlignment="CENTER" />
+<!--        <Label id="berriesCount" fx:id="berriesCount" layoutX="305.0" layoutY="14.0" prefHeight="56.0" prefWidth="98.0" text="0" />-->
+<!--        <Label id="moneyLabel" fx:id="moneyLabel" layoutX="305.0" layoutY="74.0" prefHeight="56.0" prefWidth="98.0" text="Money: 100" />-->
+        <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="403.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@strawberry.png" />
+            </image>
+        </ImageView>
+        <Label id="gameName" layoutX="69.0" layoutY="91.0" prefHeight="202.0" prefWidth="310.0" text="STICK&#10;HERO" />
+
+        <Button layoutX="10.0" layoutY="450.0" onAction="#switchToHelpScene">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0">
+                    <image>
+                        <Image url="@helpIcon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button layoutX="400.0" layoutY="450.0" onAction="#switchToShopScene">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0">
+                    <image>
+                        <Image url="@shop_icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <!--  Apply Avatar -->
+        <Button layoutX="155" layoutY="450.0" onAction="#switchToAvatarSelectionScene" text="Choose Avatar" />
+
+        <CheckBox fx:id="noAdsCheckbox" layoutX="380" layoutY="490.0" onAction="#toggleNoAds" text="No Ads" />
+
+        <ImageView fx:id="adImageView" fitHeight="223.0" fitWidth="210.0" layoutX="200.0" layoutY="400.0" preserveRatio="true" scaleX="2.4" translateX="130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="250.0">
+            <image>
+                <Image url="@adImagePath.jpg" />
+            </image>
+        </ImageView>
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#startGrowing" onMouseReleased="#stopGrowing" prefHeight="600.0" prefWidth="450.0" stylesheets="@GameSceneStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.stickhero.GameSceneController">
+   <Label fx:id="scoreLabel" layoutX="20.0" layoutY="14.0" prefHeight="114.0" prefWidth="208.0" text="Score: ">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+
+   <ImageView id="hero" fx:id="hero" fitHeight="150.0" fitWidth="47.0" layoutX="37.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@hero.png" />
+      </image>
+   </ImageView>
+   <Rectangle fx:id="block1" arcHeight="5.0" arcWidth="5.0" height="113.0" layoutX="22.0" layoutY="488.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c7c9cc" height="62.0" layoutX="22.0" layoutY="39.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
+   <Rectangle fx:id="block2" arcHeight="5.0" arcWidth="5.0" height="113.0" layoutX="202.0" layoutY="488.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+   <Rectangle fx:id="block3" arcHeight="5.0" arcWidth="5.0" height="113.0" layoutX="387.0" layoutY="488.0" stroke="BLACK" strokeType="INSIDE" width="63.0" />
+   <Rectangle fx:id="stick" arcHeight="5.0" arcWidth="5.0" height="4.0" layoutX="76.0" layoutY="488.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+   <Text layoutX="45.0" layoutY="75.0" stroke="BLACK" strokeWidth="0.3" text="Score :" />
+
+   <Button fx:id="exit" layoutX="380.0" layoutY="23.0" mnemonicParsing="false" onAction="#switchToMainScene" prefHeight="26.0" prefWidth="55.0" text="Exit" />
+</AnchorPane>
