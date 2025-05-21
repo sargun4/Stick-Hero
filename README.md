@@ -1,11 +1,11 @@
-# 🍒 Stick Hero Game – README
+# 🍒 Stick Hero Game
 
 ## 🎮 How to Play the Game
 
 - **Hold and release** the **mouse** to extend the stick.
-- **Click** the **mouse** once to flip the character onto the cherry.
+- **Click** the **mouse** once to make the character jump onto the cherry.
 - **Require more than 3 cherries** to revive the character after falling. 
-
+- Character change option from menu 
 ---
 
 ## 🚀 Game Flow
@@ -42,3 +42,11 @@ If the user undershoots or overshoots the stick, the character falls and is take
 - **JUnit** – Used for testing game components.
 
 ---
+## 📂 Project Structure
+
+Stick-Hero/
+├── StickHero/ # Main game source code
+├── UML/ # UML diagrams and design documents
+├── game_Deadline1/ # dealine1 
+├── imgs/ # Image assets used in the game
+└── README.md # Project documentation
